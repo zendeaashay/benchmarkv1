@@ -35,16 +35,11 @@ if options == 'Home':
     st.header('Home Page')
     st.write('Welcome to my world of adventures and analytics!')
 
-elif options == 'Resume':
+if options == 'Resume':
     st.header('Resume')
-    # Display the resume PDF and add a download button
-    with open('Aashay Zende - Resume.pdf', "rb") as file:
-        btn = st.download_button(
-                label="Download Resume",
-                data=file,
-                file_name="Aashay Zende - Resume.pdf",
-                mime="application/octet-stream"
-              )
+    # Provide a direct download link
+    resume_link = 'https://github.com/zendeaashay/benchmarkv1/blob/main/Aashay%20Zende%20-%20Resume.pdf'
+    st.markdown(f'<a href="{resume_link}" download>Click here to download my resume</a>', unsafe_allow_html=True)
 
 elif options == 'Photography':
     st.header('Photography')
