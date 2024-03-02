@@ -4,7 +4,6 @@ Spyder Editor
 
 This is a temporary script file.
 """
-pip install streamlit-text-rating
 import streamlit as st
 from streamlit_text_rating.st_text_rater import st_text_rater
 
