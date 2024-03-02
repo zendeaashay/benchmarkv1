@@ -38,7 +38,7 @@ if options == 'Home':
 if options == 'Resume':
     st.header('Resume')
     # Provide a direct download link
-    resume_link = 'https://github.com/zendeaashay/benchmarkv1/blob/main/Aashay%20Zende%20-%20Resume.pdf'
+    resume_link = 'Aashay Zende - Resume.pdf'
     st.markdown(f'<a href="{resume_link}" download>Click here to download my resume</a>', unsafe_allow_html=True)
 
 elif options == 'Photography':
