@@ -38,15 +38,12 @@ if options == 'Home':
 
 from st_pages import Page, show_pages, add_page_title
 
-def about_me():
-    st.title('About Me')
-    st.write('Here is some information about me...')
+def about_me_page():
+    st.title("About Me")
+    st.write("Here's some information about me...")  # Add more about yourself here
 
-add_page_title()
-
-show_pages([
-    Page("home.py", "Home", "🏠"),
-    Page(about_me, "About Me", "👤"),
-    
-])
+# Sidebar navigation with custom links
+st.sidebar.title('Navigation')
+st.sidebar.page_link("Home", label="Go to Home", icon="🏠")
+st.sidebar.write(about_me_page, label="About Me", icon="👤")  # Link to the About Me page function
 
