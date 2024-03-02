@@ -1,6 +1,5 @@
 import streamlit as st
 import base64
-from st_pages import Page, show_pages, add_page_title
 
 
 # Set page config
@@ -37,17 +36,5 @@ if options == 'Home':
     st.header('Home Page')
     st.write('Welcome to my world of adventures and analytics!')
 
-
-# Add page title and icon
-add_page_title()
-
-# Define your pages
-pages = [
-    Page("home.py", "Home", "🏠"),
-    Page("resume_download.py", "Download Resume", "📄"),  # Assuming resume_download.py is your new page script
-]
-
-# Show the pages in the sidebar
-show_pages(pages)
 
 
