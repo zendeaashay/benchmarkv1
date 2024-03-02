@@ -1,11 +1,5 @@
-# -*- coding: utf-8 -*-
-"""
-Spyder Editor
-
-This is a temporary script file.
-"""
 import streamlit as st
-from streamlit_text_rating.st_text_rater import st_text_rater
+import base64
 
 # Set page config
 st.set_page_config(page_title='Welcome to my page!', page_icon=':camera:', layout='wide')
@@ -43,9 +37,14 @@ if options == 'Home':
 
 elif options == 'Resume':
     st.header('Resume')
-    # Here you could potentially use st.file_uploader and then display your resume PDF
-    # Or use markdown to display your resume textually
-    # ...
+    # Display the resume PDF and add a download button
+    with open("/mnt/data/Aashay Zende - Resume.pdf", "rb") as file:
+        btn = st.download_button(
+                label="Download Resume",
+                data=file,
+                file_name="Aashay Zende - Resume.pdf",
+                mime="application/octet-stream"
+              )
 
 elif options == 'Photography':
     st.header('Photography')
@@ -59,9 +58,3 @@ elif options == 'Surfing':
 
 elif options == 'Power BI Visualizations':
     st.header('Power BI Visualizations')
-    # Embed your Power BI Dashboard here
-    # ...
-
-rating_response = st_text_rater(text="Did you like my page?")
-st.write('You rated:', rating_response)
-
