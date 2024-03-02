@@ -1,1 +1,1 @@
-st_pages
+st.page_link
