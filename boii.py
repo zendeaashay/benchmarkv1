@@ -4,7 +4,7 @@ Spyder Editor
 
 This is a temporary script file.
 """
-
+pip install streamlit-text-rating
 import streamlit as st
 from streamlit_text_rating.st_text_rater import st_text_rater
 
@@ -66,4 +66,3 @@ elif options == 'Power BI Visualizations':
 rating_response = st_text_rater(text="Did you like my page?")
 st.write('You rated:', rating_response)
 
-#pip install streamlit-text-rating
