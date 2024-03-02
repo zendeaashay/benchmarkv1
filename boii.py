@@ -36,5 +36,17 @@ if options == 'Home':
     st.header('Home Page')
     st.write('Welcome to my world of adventures and analytics!')
 
+from st_pages import Page, show_pages, add_page_title
 
+def about_me():
+    st.title('About Me')
+    st.write('Here is some information about me...')
+
+add_page_title()
+
+show_pages([
+    Page("home.py", "Home", "🏠"),
+    Page(about_me, "About Me", "👤"),
+    
+])
 
