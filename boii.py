@@ -6,6 +6,7 @@ This is a temporary script file.
 """
 
 import streamlit as st
+from streamlit_text_rating.st_text_rater import st_text_rater
 
 # Set page config
 st.set_page_config(page_title='Welcome to my page!', page_icon=':camera:', layout='wide')
@@ -62,7 +63,7 @@ elif options == 'Power BI Visualizations':
     # Embed your Power BI Dashboard here
     # ...
 
-elif options == 'About':
-    st.header('About')
-    st.write('This is a page about me and my Streamlit app.')
+rating_response = st_text_rater(text="Did you like my page?")
+st.write('You rated:', rating_response)
 
+#pip install streamlit-text-rating
