@@ -50,15 +50,4 @@ pages = [
 # Show the pages in the sidebar
 show_pages(pages)
 
-elif options == 'Photography':
-    st.header('Photography')
-    # Here you could use st.image to display your photographs
-    # ...
 
-elif options == 'Surfing':
-    st.header('Surfing')
-    # Similar to photography, you can display surfing images or videos
-    # ...
-
-elif options == 'Power BI Visualizations':
-    st.header('Power BI Visualizations')
