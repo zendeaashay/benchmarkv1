@@ -1,6 +1,6 @@
 import streamlit as st
 import base64
-
+pip install st-pages
 
 # Set page config
 st.set_page_config(page_title='Welcome to my page!', page_icon=':camera:', layout='wide')
