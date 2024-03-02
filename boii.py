@@ -8,12 +8,17 @@ This is a temporary script file.
 import streamlit as st
 
 # Set page config
-st.set_page_config(page_title='Aashay Zende', page_icon=':camera:', layout='wide')
+st.set_page_config(page_title='Welcome to my page!', page_icon=':camera:', layout='wide')
 
 # Main title
-st.title("Hi there")
+st.title("Home Page")
 
-st.image('image.jpeg', caption='Exploring the mountains with furry friends!')
+# Footer
+st.markdown('---')
+st.subheader('Aashay Zende')
+st.caption('Data Wizard | Adventurer | Photographer | Surfer')
+
+st.image('image.jpeg', caption='Exploring the Himalayas with my furry friends!')
 
 # Introduction text with links to other pages
 intro_text = """
@@ -61,7 +66,3 @@ elif options == 'About':
     st.header('About')
     st.write('This is a page about me and my Streamlit app.')
 
-# Footer
-st.markdown('---')
-st.subheader('Aashay Zende')
-st.caption('Data Wizard | Adventurer | Photographer | Surfer')
