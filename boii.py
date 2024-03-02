@@ -1,5 +1,7 @@
 import streamlit as st
 import base64
+from st_pages import Page, show_pages, add_page_title
+
 
 # Set page config
 st.set_page_config(page_title='Welcome to my page!', page_icon=':camera:', layout='wide')
@@ -35,11 +37,18 @@ if options == 'Home':
     st.header('Home Page')
     st.write('Welcome to my world of adventures and analytics!')
 
-if options == 'Resume':
-    st.header('Resume')
-    # Provide a direct download link
-    resume_link = 'Aashay Zende - Resume.pdf'
-    st.markdown(f'<a href="{resume_link}" download>Click here to download my resume</a>', unsafe_allow_html=True)
+
+# Add page title and icon
+add_page_title()
+
+# Define your pages
+pages = [
+    Page("home.py", "Home", "🏠"),
+    Page("resume_download.py", "Download Resume", "📄"),  # Assuming resume_download.py is your new page script
+]
+
+# Show the pages in the sidebar
+show_pages(pages)
 
 elif options == 'Photography':
     st.header('Photography')
