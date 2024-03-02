@@ -38,7 +38,7 @@ if options == 'Home':
 elif options == 'Resume':
     st.header('Resume')
     # Display the resume PDF and add a download button
-    with open("/mnt/data/Aashay Zende - Resume.pdf", "rb") as file:
+    with open('Aashay Zende - Resume.pdf', "rb") as file:
         btn = st.download_button(
                 label="Download Resume",
                 data=file,
