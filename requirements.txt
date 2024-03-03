@@ -1,4 +1,6 @@
 pandas
 altair
 streamlit_pdf_viewer
-streamlit_chat
+streamlit_chatbox
+simplejson
+time
