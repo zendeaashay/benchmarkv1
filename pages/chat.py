@@ -1,6 +1,5 @@
 import streamlit as st
 from streamlit_chatbox import *
-import time
 import simplejson as json
 
 # Initialize chat_box and FakeLLM
