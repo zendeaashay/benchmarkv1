@@ -15,12 +15,12 @@ def show_resume():
     st.write("Here is my resume showcasing my experience and skills.")
 
     # Link to download resume
-    resume_link = 'path_to_resume.pdf'
+    resume_link = 'Aashay Zende - Resume.pdf'
     with open(resume_link, "rb") as file:
         st.download_button(
             label="Download Resume",
             data=file,
-            file_name="resume.pdf",
+            file_name="Aashay Zende - Resume.pdf",
             mime="application/pdf"
         )
 
