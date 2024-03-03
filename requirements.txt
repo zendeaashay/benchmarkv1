@@ -1,1 +1,2 @@
 st_pages
+libgl1-mesa-glx
