@@ -1,2 +1,3 @@
-st_pages
-libgl1-mesa-glx
+pandas
+altair
+plotly
