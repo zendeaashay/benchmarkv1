@@ -6,16 +6,23 @@ Created on Sat Mar  2 16:46:35 2024
 @author: aashayzende
 """
 
-import streamlit as st
+iimport streamlit as st
 
-st.title('Download My Resume')
+def show_resume():
+    st.title('My Resume')
 
+    # You can add more content here as needed
+    st.write("Here is my resume showcasing my experience and skills.")
 
-resume_link = 'Aashay Zende - Resume.pdf'
-with open(resume_link, "rb") as file:
-    st.download_button(
-        label="Download Resume",
-        data=file,
-        file_name="Aashay_Zende_Resume.pdf",
-        mime="application/pdf"
-    )
+    # Link to download resume
+    resume_link = 'path_to_resume.pdf'
+    with open(resume_link, "rb") as file:
+        st.download_button(
+            label="Download Resume",
+            data=file,
+            file_name="resume.pdf",
+            mime="application/pdf"
+        )
+
+# Execute the function to display the resume
+show_resume()
