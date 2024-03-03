@@ -8,10 +8,9 @@ Created on Sat Mar  2 16:46:35 2024
 
 import streamlit as st
 
-# Page content
 st.title('Download My Resume')
 
-# Resume download logic
+
 resume_link = 'Aashay Zende - Resume.pdf'
 with open(resume_link, "rb") as file:
     st.download_button(
