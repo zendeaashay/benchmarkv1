@@ -1,10 +1,9 @@
+#pip install streamlit-elements
 import streamlit as st
-import base64
 
-# Set page config
 st.set_page_config(page_title='Welcome to my page!', page_icon=':camera:', layout='wide')
 
-# Main title
+
 st.title("Home Page")
 
 # Footer
@@ -12,7 +11,7 @@ st.markdown('---')
 st.subheader('Aashay Zende')
 st.caption('Data Wizard | Adventurer | Photographer | Surfer')
 
-st.image('image.jpeg', caption='Exploring the Himalayas with my furry friends!')
+#st.image('image.jpeg', caption='Exploring the Himalayas with my furry friends!')
 
 # Introduction text with links to other pages
 intro_text = """
@@ -35,14 +34,9 @@ if options == 'Home':
     st.header('Home Page')
     st.write('Welcome to my world of adventures and analytics!')
 
-from st_pages import Page, show_pages, add_page_title
+
 
 def about_me_page():
     st.title("About Me")
     st.write("Here's some information about me...")  # Add more about yourself here
-
-# Sidebar navigation with custom links
-st.sidebar.title('Navigation')
-st.sidebar.page_link("Home", label="Go to Home", icon="🏠")
-st.sidebar.write(about_me_page, label="About Me", icon="👤")  # Link to the About Me page function
 
