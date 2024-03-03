@@ -2,7 +2,6 @@ import streamlit as st
 import pandas as pd
 import altair as alt
 
-# Set page configuration
 st.set_page_config( page_title='Welcome to my page!', 
                    page_icon="🏂",
                    layout='wide',
@@ -17,7 +16,7 @@ options = st.sidebar.radio('Select a page:',
 
 # Function definitions for different pages
 def home_page():
-    st.header('Home Page')
+    st.header('Home Page ⌂')
     st.write('Welcome to my world of adventures and analytics!')
     st.image('image.jpeg', caption='Exploring the Himalayas with my furry friends!')
     st.subheader('Aashay Zende')
