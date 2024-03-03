@@ -1,5 +1,5 @@
 pandas
 altair
 streamlit_pdf_viewer
-streamlit_chatbox
+st_chat_message
 simplejson
