@@ -7,17 +7,19 @@ Created on Sat Mar  2 16:46:35 2024
 """
 
 import streamlit as st
-import base64
+from streamlit_pdf_viewer import pdf_viewer
 
-def show_pdf(file_path):
-    with open(file_path,"rb") as f:
-    base64_pdf = base64.b64encode(f.read()).decode('utf-8')
-    pdf_display = f'<iframe src="data:application/pdf;base64,{base64_pdf}" width="800" height="800" type="application/pdf"></iframe>'
-    st.markdown(pdf_display, unsafe_allow_html=True)
-
-show_pdf('Aashay Zende - Resume.pdf')
 def show_resume():
     st.title('My Resume')
+
+    # You can add more content here as needed
+    st.write("Here is my resume showcasing my experience and skills.")
+
+    # Display the resume PDF
+    pdf_viewer("Aashay Zende - Resume.pdf", width=700, height=1000)
+
+# Execute the function to display the resume
+show_resume()
 
     # You can add more content here as needed
     st.write("Here is my resume showcasing my experience and skills.")
