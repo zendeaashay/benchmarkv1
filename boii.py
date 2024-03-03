@@ -6,9 +6,9 @@ st.set_page_config(page_title='Welcome to my page!', page_icon=':camera:', layou
 # Main title and footer
 st.title("Home Page")
 st.markdown('---')
+intro_text = """ Hey there, Welcome to Aashay Zende's Profile Page. Here you can find access to my resume, my skills, projects and other information like my likes, dislikes, hobbies and my favorite sports team. Feel free to explore!"""
 
-
-# Sidebar navigation
+# Sidebar
 st.sidebar.title('Navigation')
 options = st.sidebar.radio('Select a page:',
                            ['Home', 'Resume', 'Photography', 'Surfing', 'Power BI Visualizations', 'ML Predictions', 'About'])
@@ -22,14 +22,13 @@ def home_page():
     st.caption('Data Wizard | Adventurer | Photographer | Surfer')
 
     # Introduction text
-    intro_text = """
-    Hey there! I'm Aashay, a data wizard by day and an adventurous spirit by... well, also by day (and sometimes night).
-    Currently weaving my magic with numbers and analytics at the prestigious D'Amore McKim School of Business,
+    st.write(""" Hey there! I'm Aashay, a data wizard by day and an adventurous spirit by... well, also by day (and sometimes night).
+    Currently weaving my magic with numbers and analytics at the prestigious DAmore McKim School of Business,
     Northeastern University, I'm on a quest to make sense of the world, one dataset at a time.
     Born and raised in the bustling city of Mumbai, India, I've always been a bit of a nomad at heart,
     with my compass pointing towards icy mountain peaks and the soothing waves of beaches, [surfing](#).
-    I also love [painting](#) and [photography](#). Feel free to explore my other interests!
-    """
+    I also love [painting](#) and [photography](#)
+    """)
     st.markdown(intro_text)
 
 def resume_page():
