@@ -6,7 +6,7 @@ Created on Sat Mar  2 16:46:35 2024
 @author: aashayzende
 """
 
-iimport streamlit as st
+import streamlit as st
 
 def show_resume():
     st.title('My Resume')
