@@ -10,11 +10,6 @@ st.set_page_config( page_title='Welcome to my page!',
                    initial_sidebar_state="expanded")
 alt.themes.enable("dark")
 
-# Main title and footer
-st.title("Welocme!")
-st.markdown('---')
-intro_text = """ Hey there, Welcome to Aashay Zende's Profile Page. Here you can find access to my resume, my skills, projects and other information like my likes, dislikes, hobbies and my favorite sports team. Feel free to explore!"""
-st.markdown(intro_text)
 
 # Sidebar
 st.sidebar.title('Navigation')
